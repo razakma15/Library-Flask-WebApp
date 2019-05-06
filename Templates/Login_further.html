@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+{% if username == "not verified" %}
+Incorrect username or password
+{% endif %}
+
+{% if username == "no inputs" %}
+No username or password entered
+{% endif %}
+
+{% if username == "verified" %}
+Please search for books below
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{% if username == "verified" %}
+<br><br><br>
+<form autocomplete="off" form action="{{ url_for('search') }}" method="post">
+  <div class="row">
+      <div class ="col-lg-10 offset-lg-1">
+        <input type="text" name="search_bar" placeholder="Please enter a detail of your book">
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-lg-4 offset-lg-1">
+      <button class="login_button">Search</button>
+    </div>
+    <div class="col-lg-6">
+      <input type="text" name="detail_bar" placeholder="What is the detail? eg. isbn">
+    </div>
+  </div>
+</form>
+{% endif %}
+
+
+
+
+{% endblock %}

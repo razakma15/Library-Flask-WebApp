@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Reviews</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+      <div class="rectangle_bg">
+        <div class="row">
+          <div class = "col-lg-12">
+            <span style="font-size: 50px; color: white;">
+            <a href="/"><i class="fas fa-home fa" style="margin-left:10px"></i></a>
+            </span>
+
+            <h1 class="title">{% block title %}{% endblock %}</h1>
+
+          </div>
+        </div>
+
+           {% block body %}
+           {% endblock %}
+
+
+      </div>
+    </body>
+</html>

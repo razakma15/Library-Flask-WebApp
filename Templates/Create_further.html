@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+{% if login_list == "verified" %}
+Thank you for signing up your credentials have been registered!
+{% endif %}
+
+{% if login_list != "verified" %}
+No username entered or it is already taken!
+{% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+{% if login_list == "verified" %}
+<br><br>
+<div class="row">
+  <div class="col-lg-12">
+      <p class="text_box">Your username is {{new_username}}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+      <p class="text_box">Your password is {{new_password}}</p>
+  </div>
+</div>
+{% endif %}
+
+{% endblock %}

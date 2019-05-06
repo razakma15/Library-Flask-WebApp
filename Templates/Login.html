@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Enter your credentials to login
+{% endblock %}
+
+{% block body %}
+
+<form form action="{{ url_for('login_f') }}" method="post">
+
+    <div class="row">
+      <div class ="col-lg-6">
+
+        <input type="text" name="username_login" placeholder="Please Enter Your Username">
+
+      </div>
+      <div class ="col-lg-6">
+        <input type="password" name="password_login" placeholder="Please Enter Your Password">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <button class="login_button" style="margin-top:100px;">Login</button>
+      </div>
+    </div>
+</form>
+
+
+
+
+
+
+
+{% endblock %}

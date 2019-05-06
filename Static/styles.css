@@ -1,0 +1,95 @@
+body{
+  margin: 20px;
+  background-color:#1954d4;
+}
+input[type=text]{
+    margin-left: 10px;
+}
+
+input{
+  border: 4px solid black;
+  border-radius: 10px;
+  font-size: 280%;
+  width: 98%;
+  padding: 12px 20px;
+  margin: 12px 0 0 12px;
+  box-sizing: border-box;
+}
+
+.login_button{
+  font-style: italic;
+  font-family: fantasy;
+  font-size: 300%;
+  width:100%;
+  background-color:#1954d4;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: medium;
+  border-color: black;
+  color: white;
+  padding: 10px;
+  margin:12px 0px 0 0;
+}
+
+.rectangle_bg{
+  overflow-x: scroll;
+  width: 100%;
+  height: 1000px;
+  background: #86c0f0;
+  border-width: medium;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+}
+.rectangle_box{
+  opacity: 1.0;
+  text-align: center;
+  margin: 20px;
+  width: 680px;
+  height: 70%;
+  background: #1954d4;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: black;
+}
+
+
+.rectangle_box:hover{
+ background: rgba(25,84, 212, 0.5);
+}
+
+.title{
+  font-size: 500%;
+  text-align: center;
+  font-style: italic;
+  font-family: fantasy;
+  color: white;
+}
+
+.text_box{
+  font-size: 500%;
+  text-align: center;
+  font-weight: bold;
+  font-family: fantasy;
+  color: white;
+}
+
+.img_class{
+  padding:20px;
+  width:100%;
+  height:100%;
+}
+
+p{
+  font-size: 150%;
+  font-family: cursive;
+  color: white;
+}
+
+hr {
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 2px;
+}

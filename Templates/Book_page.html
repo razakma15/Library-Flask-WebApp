@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<h1 class="title" style="margin-bottom:80px;">Results of search</h1>
+{% endblock %}
+
+{% block body %}
+
+{% for x in range(loop_length) %}
+
+<div class="row">
+  <div class="col-lg-4 offset-lg-1">
+    <p>Title: {{book_data[x][2]}}</p>
+  </div>
+  <div class="col-lg-4">
+    <p>Author: {{book_data[x][3]}}</p>
+    </div>
+  <div class="col-lg-2">
+    <p>Year: {{book_data[x][4]}}</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-4 offset-lg-1">
+    <p>ISBN: {{book_data[x][1]}}</p>
+  </div>
+  <div class="col-lg-4">
+    <p>Rating: {{response[x]}}</p>
+    </div>
+</div>
+<hr>
+<br><br>
+{% endfor %}
+
+{% endblock %}
