@@ -15,7 +15,7 @@ Jinja2==2.7.3
 MarkupSafe==0.23
 monotonic==1.5
 psycopg2==2.7.7
-python-engineio==3.5.0
+python-engineio==3.8.2.post1
 python-socketio==4.0.0
 pytz==2018.9
 requests==2.21.0
