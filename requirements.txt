@@ -25,5 +25,5 @@ SQLAlchemy==1.2.18
 sqlparse==0.3.0
 stripe==2.36.2
 urllib3==1.24.1
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 whitenoise==4.1.4
