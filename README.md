@@ -1,1 +1,4 @@
-# Library-Flask-WebApp
+- First clone the project to your local machine
+- then install all requirements and enter into the CLI set FLASK_APP=web_app.py. 
+- Additionally enter set DATABASE_URL=postgres://rdvemcxsdpnspg:d17ef3f810d19eb9d31f4dde4f780a74c43673579860d91e94cf451e76cedc7f@ec2-54-75-230-41.eu-west-1.compute.amazonaws.com:5432/d4ai9svgb55q1b
+- Finally type flask run into the command line to run the application locally on your machine.
